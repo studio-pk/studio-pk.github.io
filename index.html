@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio PK - Investment Proposal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/pk.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="studio-header">
+            <img src="img/pk.png" alt="Studio PK Logo" class="main-logo">
+        </header>
+
+        <div class="content">
+            <div class="illustration-container">
+                <img src="img/angel_crop.png" alt="Cupid with Camera" class="cupid-sketch">
+            </div>
+            
+            <h1 class="question">투자를 하시겠습니까?</h1>
+            <p class="subtitle">Would you like to invest in our business?</p>
+            
+            <div class="buttons-container">
+                <button id="yesBtn" class="btn btn-yes">YES</button>
+                <button id="noBtn" class="btn btn-no">NO</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-logo">
+                <img src="img/angel_crop.png" alt="Studio PK" class="modal-logo-img">
+            </div>
+            <h2>Thank You!</h2>
+            <p class="modal-subtitle">Studio PK의 파트너가 되신 것을 축하드립니다.</p>
+            <p class="english">Thank you for your investment!</p>
+            <button id="closeModal" class="btn btn-close">닫기</button>
+        </div>
+    </div>
+
+    <!-- Second Chance Modal -->
+    <div id="secondChanceModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-logo">
+                <img src="img/angel_crop.png" alt="Studio PK" class="modal-logo-img">
+            </div>
+            <h2>Seriously?</h2>
+            <p class="modal-subtitle">다시 한번 기회를 드리겠습니다.</p>
+            <p class="english">I will give you one more chance.</p>
+            <button id="closeSecondChance" class="btn btn-close">재도전</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
